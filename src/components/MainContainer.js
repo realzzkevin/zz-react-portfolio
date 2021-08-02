@@ -6,7 +6,7 @@ import Works from './pages/Works';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-export default function MainContainer () {
+export default function MainContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
@@ -20,10 +20,10 @@ export default function MainContainer () {
             return <Contact />;
         }
         if (currentPage === 'Resume') {
-            return <Resume />
+            return <Resume />;
         }
 
-        return <About />
+        return <About />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -31,7 +31,9 @@ export default function MainContainer () {
     return (
         <div>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+            <div className="container-lg">
+                {renderPage()}
+            </div>
             <Footer />
         </div>
     );

@@ -42,8 +42,6 @@ function ContactForm() {
         setMessage('');
     }
     const handleMouseOut = (e) => {
-        e.preventDfault();
-
         if (!e.target.value) {
             setError(`${e.target.name} is required.`);
         }
