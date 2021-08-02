@@ -1,8 +1,8 @@
 import React from "react";
-import TechBlog from "./asset/images/Tech-Blog.png";
-import DinnerPlanner from "./asset/images/Dinner_planner.png";
-import WeatherDashboard from "./assets/images/weather-dashboard.png";
-import WorkdayScheduler from "./assets/images/workday-scheduler.png";
+import TechBlog from "../assets/images/Tech-Blog.png";
+import DinnerPlanner from "../assets/images/Dinner-Planner.png";
+import WeatherDashboard from "../assets/images/weather-dashboard.png";
+import WorkdayScheduler from "../assets/images/workday-scheduler.png";
 
 
 export default function Carousel () {

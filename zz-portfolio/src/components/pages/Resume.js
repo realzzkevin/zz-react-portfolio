@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePdf from './assets/download/Zhong_Zheng_resume.pdf';
+import resumePdf from '../../assets/download/Zhong_Zheng_resume.pdf';
 
 export default function Resume() {
 
@@ -13,6 +13,8 @@ export default function Resume() {
                     </a>
                 </figure>
             </div>
+
+
         </div>
     );
 }
