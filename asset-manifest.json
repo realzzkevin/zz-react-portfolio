@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Zhong-Zheng-Portfolio/static/css/main.def18378.chunk.css",
+    "main.js": "/Zhong-Zheng-Portfolio/static/js/main.642058da.chunk.js",
+    "main.js.map": "/Zhong-Zheng-Portfolio/static/js/main.642058da.chunk.js.map",
+    "runtime-main.js": "/Zhong-Zheng-Portfolio/static/js/runtime-main.d21cba7b.js",
+    "runtime-main.js.map": "/Zhong-Zheng-Portfolio/static/js/runtime-main.d21cba7b.js.map",
+    "static/css/2.4be38407.chunk.css": "/Zhong-Zheng-Portfolio/static/css/2.4be38407.chunk.css",
+    "static/js/2.f36d7c72.chunk.js": "/Zhong-Zheng-Portfolio/static/js/2.f36d7c72.chunk.js",
+    "static/js/2.f36d7c72.chunk.js.map": "/Zhong-Zheng-Portfolio/static/js/2.f36d7c72.chunk.js.map",
+    "index.html": "/Zhong-Zheng-Portfolio/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/Zhong-Zheng-Portfolio/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.def18378.chunk.css.map": "/Zhong-Zheng-Portfolio/static/css/main.def18378.chunk.css.map",
+    "static/js/2.f36d7c72.chunk.js.LICENSE.txt": "/Zhong-Zheng-Portfolio/static/js/2.f36d7c72.chunk.js.LICENSE.txt",
+    "static/media/Dinner-Planner.b2aedd30.png": "/Zhong-Zheng-Portfolio/static/media/Dinner-Planner.b2aedd30.png",
+    "static/media/Tech-Blog.a690827a.png": "/Zhong-Zheng-Portfolio/static/media/Tech-Blog.a690827a.png",
+    "static/media/Zhong_Zheng_resume.d76db2a2.pdf": "/Zhong-Zheng-Portfolio/static/media/Zhong_Zheng_resume.d76db2a2.pdf",
+    "static/media/employees-database.a9912558.png": "/Zhong-Zheng-Portfolio/static/media/employees-database.a9912558.png",
+    "static/media/myphoto.8ed8edd2.jpg": "/Zhong-Zheng-Portfolio/static/media/myphoto.8ed8edd2.jpg",
+    "static/media/resume-img.00f60300.png": "/Zhong-Zheng-Portfolio/static/media/resume-img.00f60300.png",
+    "static/media/team-profile.fc574867.png": "/Zhong-Zheng-Portfolio/static/media/team-profile.fc574867.png",
+    "static/media/weather-dashboard.b2ab4272.png": "/Zhong-Zheng-Portfolio/static/media/weather-dashboard.b2ab4272.png",
+    "static/media/workday-scheduler.4ff10bdb.png": "/Zhong-Zheng-Portfolio/static/media/workday-scheduler.4ff10bdb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d21cba7b.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.f36d7c72.chunk.js",
+    "static/css/main.def18378.chunk.css",
+    "static/js/main.642058da.chunk.js"
+  ]
+}
