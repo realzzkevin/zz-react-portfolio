@@ -80,6 +80,13 @@ nav {
 
 
 @media screen and (max-width:768px){
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
   #nav-dropdown {
       display: block;
   }

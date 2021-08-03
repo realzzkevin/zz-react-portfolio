@@ -5,7 +5,7 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer () {
     return (
-        <footer className="footer mt-5">
+        <footer className="footer mt-10">
             <div className="container border border-light border-1 rounded-3 py-2 bg-dark">
                 <div className="row align-items-center justify-content-between" id="contact-list">
                     <div className="col-3 text-center">

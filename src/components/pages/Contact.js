@@ -7,14 +7,14 @@ function ContactForm() {
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
 
-    const handleinputChange = (e) => {
+    const handleInputChange = (e) => {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
 
-        if (inputType === 'name') {
+        if (inputType === 'email') {
             setEmail(inputValue);
-        } else if (inputType === 'email') {
+        } else if (inputType === 'name') {
             setName(inputValue);
         } else {
             setMessage(inputValue);
@@ -22,17 +22,17 @@ function ContactForm() {
     };
 
     const handleFormSubmit = (e) => {
-        e.preventDfault();
+        e.preventDefault();
 
         if (!validateEmail(email)) {
             setError('Please enter a valid email');
             return;
         }
 
-        if (isEmptyStr(name)) {
+        if (!isEmptyStr(name)) {
             setError('Please enter your name.');
             return;
-        } else if (isEmptyStr(message)) {
+        } else if (!isEmptyStr(message)) {
             setError('Please enter your message');
             return;
         }
@@ -40,6 +40,7 @@ function ContactForm() {
         setEmail('');
         setName('');
         setMessage('');
+        setError('');
     }
     const handleMouseOut = (e) => {
         if (!e.target.value) {
@@ -49,11 +50,11 @@ function ContactForm() {
         return;
     }
     return (
-        <div>
-            <h2>
+        <div id="contect-me">
+            <h2 className="text-light">
                 Contact
             </h2>
-            <form className="form" onSubmit={handleFormSubmit}>
+            <form className="form text-light" onSubmit={handleFormSubmit}>
                 <div>
                     <label htmlFor="email" className="form-label">
                         Email:
@@ -62,7 +63,7 @@ function ContactForm() {
                         value={email}
                         name="email"
                         id='email'
-                        onChange={handleinputChange}
+                        onChange={handleInputChange}
                         onMouseOut={handleMouseOut}
                         type="email"
                         placeholder="email"
@@ -77,7 +78,7 @@ function ContactForm() {
                         value={name}
                         name="name"
                         id="name"
-                        onChange={handleinputChange}
+                        onChange={handleInputChange}
                         onMouseOut={handleMouseOut}
                         type='text'
                         placeholder="name"
@@ -92,17 +93,17 @@ function ContactForm() {
                         value={message}
                         name="message"
                         id="message"
-                        onChange={handleinputChange}
+                        onChange={handleInputChange}
                         onMouseOut={handleMouseOut}
                         type='textarea'
                         className="form-control"
                     />
                 </div>
-                <button type="submit" className="btn"> Submit </button>
+                <button type="submit" className="btn btn-primary mt-2"> Submit </button>
             </form>
             {error && (
                 <div>
-                    <p className="error-text">{error}</p>
+                    <p className="text-danger ">{error}</p>
                 </div>
             )}
 

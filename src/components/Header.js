@@ -3,7 +3,7 @@ import React from 'react';
 
 function Header({ currentPage, handlePageChange }) {
     return (
-        <header >
+        <header>
             <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
                 <div className="container-fluid">
                     <div id="nav-dropdown">
