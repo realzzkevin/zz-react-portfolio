@@ -29,7 +29,7 @@ export default function MainContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className="wrap">
+        <div className="wrap mb-5">
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             <div className="container-lg">
                 {renderPage()}
