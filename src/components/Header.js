@@ -31,7 +31,7 @@ function Header({ currentPage, handlePageChange }) {
                     <a className="navbar-brand" href="#about-me"> <h2>Zhong Zheng</h2></a>
                     {/*<Navigation currentPage={currentPage} HandlePageChange={handlePageChange} />*/}
                     <div id="nav-bar-tabs">
-                        <ul className="nav nav-pills justify-content-end mb-0" id="page-tab" role="tablist">
+                        <ul className="nav nav-pills justify-content-end mb-0" id="page-tab">
                             <li className="nav-item">
                                 <a
                                     onClick={() => handlePageChange('About')}
