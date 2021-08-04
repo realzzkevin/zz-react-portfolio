@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zz-react-portfolio/static/css/main.def18378.chunk.css",
-    "main.js": "/zz-react-portfolio/static/js/main.642058da.chunk.js",
-    "main.js.map": "/zz-react-portfolio/static/js/main.642058da.chunk.js.map",
+    "main.css": "/zz-react-portfolio/static/css/main.ded7cb09.chunk.css",
+    "main.js": "/zz-react-portfolio/static/js/main.f5d6e064.chunk.js",
+    "main.js.map": "/zz-react-portfolio/static/js/main.f5d6e064.chunk.js.map",
     "runtime-main.js": "/zz-react-portfolio/static/js/runtime-main.fc711c3b.js",
     "runtime-main.js.map": "/zz-react-portfolio/static/js/runtime-main.fc711c3b.js.map",
     "static/css/2.4be38407.chunk.css": "/zz-react-portfolio/static/css/2.4be38407.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f36d7c72.chunk.js.map": "/zz-react-portfolio/static/js/2.f36d7c72.chunk.js.map",
     "index.html": "/zz-react-portfolio/index.html",
     "static/css/2.4be38407.chunk.css.map": "/zz-react-portfolio/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.def18378.chunk.css.map": "/zz-react-portfolio/static/css/main.def18378.chunk.css.map",
+    "static/css/main.ded7cb09.chunk.css.map": "/zz-react-portfolio/static/css/main.ded7cb09.chunk.css.map",
     "static/js/2.f36d7c72.chunk.js.LICENSE.txt": "/zz-react-portfolio/static/js/2.f36d7c72.chunk.js.LICENSE.txt",
     "static/media/Dinner-Planner.b2aedd30.png": "/zz-react-portfolio/static/media/Dinner-Planner.b2aedd30.png",
     "static/media/Tech-Blog.a690827a.png": "/zz-react-portfolio/static/media/Tech-Blog.a690827a.png",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.fc711c3b.js",
     "static/css/2.4be38407.chunk.css",
     "static/js/2.f36d7c72.chunk.js",
-    "static/css/main.def18378.chunk.css",
-    "static/js/main.642058da.chunk.js"
+    "static/css/main.ded7cb09.chunk.css",
+    "static/js/main.f5d6e064.chunk.js"
   ]
 }
