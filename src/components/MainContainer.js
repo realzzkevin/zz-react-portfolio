@@ -29,10 +29,12 @@ export default function MainContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className="wrap mb-5">
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            <div className="container-lg">
-                {renderPage()}
+        <div className="main">
+            <div className="content">
+                <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+                <div className="container-lg">
+                    {renderPage()}
+                </div>
             </div>
             <Footer />
         </div>

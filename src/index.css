@@ -19,10 +19,21 @@ body {
   background-color: var(--darkGray);
   padding-top: 70px;
   position: relative;
-  min-height: 100%;
-  margin-bottom: 60px;
-  clear: both;
+  height: 100%;
 }
+/* try to create a sticky footer.*/
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
 nav {
   align-items: flex-start;
 }
@@ -61,12 +72,6 @@ nav {
 /* use @media to control display options for nav dropdown menu and pill style menu*/
 @media screen and (min-width: 993px){
   
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-  }
   #nav-dropdown, #navbarNavDarkDropdown{
       display: none;
   }
@@ -75,12 +80,6 @@ nav {
 
 @media screen and (max-width:992px){
   
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-  }
   #nav-dropdown {
       display: none;
   }
@@ -88,7 +87,6 @@ nav {
 
 
 @media screen and (max-width:768px){
-
   
   #nav-dropdown {
       display: block;
