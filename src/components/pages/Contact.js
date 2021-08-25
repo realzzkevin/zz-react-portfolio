@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { validateEmail, isEmptyStr } from "../../utils/helper";
+import  emailjs  from 'emailjs-com';
 
 function ContactForm() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
 
     const handleInputChange = (e) => {
         const { target } = e;
@@ -27,7 +29,7 @@ function ContactForm() {
         if (!validateEmail(email)) {
             setError('Please enter a valid email');
             return;
-        }
+        };
 
         if (!isEmptyStr(name)) {
             setError('Please enter your name.');
@@ -35,7 +37,23 @@ function ContactForm() {
         } else if (!isEmptyStr(message)) {
             setError('Please enter your message');
             return;
-        }
+        };
+
+        emailjs.init(process.env.REACT_APP_APIKEY);
+
+        emailjs.sendForm( 
+            process.env.REACT_APP_SERVICE, 
+            process.env.REACT_APP_TEMPLATE, 
+            e.target)
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(`Thank you, I'll contact you as soon as possible.`);
+                setInterval(() => {
+                    setSuccess('')
+                }, 6000);   
+            }).catch((err) => {
+                console.log( err.text);
+            });
 
         setEmail('');
         setName('');
@@ -104,6 +122,11 @@ function ContactForm() {
             {error && (
                 <div>
                     <p className="text-danger ">{error}</p>
+                </div>
+            )}
+            {success && (
+                <div>
+                    <p className="text-success">{success}</p>
                 </div>
             )}
 
